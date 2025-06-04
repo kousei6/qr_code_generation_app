@@ -65,7 +65,7 @@ def main():
     # セッションステートに画像データがあれば表示する
     if st.session_state.qr_byte_im:
         st.subheader("生成されたQRコード:")
-        st.image(st.session_state.qr_byte_im, caption=st.session_state.qr_caption, use_column_width=True)
+        st.image(st.session_state.qr_byte_im, caption=st.session_state.qr_caption, use_container_width=True)
 
         st.download_button(
             label="QRコードをダウンロード (PNG)",
